@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;             
+    box-sizing: border-box;      
+    text-decoration: none;  
+    font-family: sans-serif;  
+    font-size: 14px;
+
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color:#fff; 
+    margin: 0;     
+    padding: 0;   
+    display: flex;     
+    justify-content: center;                                      
+}
+.flex-container{
+display: flex;
+}
+.instagram-wrapper{
+    
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.insta-phone{
+   
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.insta-phone img{
+    height: 50rem;
+}
+
+.insta-continue{
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    display: flex;
+    border: 1px solid lightgrey;
+    align-items: center;
+    justify-content: space-between; 
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border-radius: 3px;
+    
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+
+.logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6rem;
+
+}
+
+.insta-login{
+    background-color: #0095f6;
+    color: #ffff;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.insta-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160, 160, 160); 
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+
+}
+
+/* media queries*/
+
+@media (max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+}
+  
+/* media queries*/
+
+@media (max-width: 650px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+    .insta-phone {
+        display: none;
+    }
+    .insta-continue{
+        width: 100%;
+    }
+}
